@@ -1,4 +1,4 @@
-export const NAV_LINK =[
+export const NAV_LINK = [
     {href: '/', key: "home", label: "Home"},
     {href: '/', key: "aboutus", label: "About Us"},
     {href: '/', key: "services", label: "Services"},
