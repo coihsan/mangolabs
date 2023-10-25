@@ -266,7 +266,7 @@
     "@nextui-org/system-rsc" "2.0.6"
     "@nextui-org/theme" "2.1.9"
 
-"@nextui-org/button@2.0.21":
+"@nextui-org/button@^2.0.21", "@nextui-org/button@2.0.21":
   version "2.0.21"
   resolved "https://registry.npmjs.org/@nextui-org/button/-/button-2.0.21.tgz"
   integrity sha512-Y0iSrRdyALe0paImTwhtkLSbdXBhxJxqUUcIxUK20DQiG2ZFO+UL4DsrshOox7D7HpDpbf7Pn/5Lwm04skrc3Q==
@@ -503,7 +503,7 @@
     "@react-types/overlays" "^3.8.2"
     react-remove-scroll "^2.5.6"
 
-"@nextui-org/navbar@2.0.22":
+"@nextui-org/navbar@^2.0.22", "@nextui-org/navbar@2.0.22":
   version "2.0.22"
   resolved "https://registry.npmjs.org/@nextui-org/navbar/-/navbar-2.0.22.tgz"
   integrity sha512-s6XJUcx7p+8tUBVPK5QPqk8jjrnUt083r8hoa0SA5WWe4TY4QiEFWX2maaDFINo00/6mZmMlql0QJh1OrhdsDA==
