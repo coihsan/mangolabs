@@ -4,7 +4,7 @@ import Services from './components/Services'
 export default function Home() {
   return (
     <main className="">
-      <section className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-indigo-900 via-pink-950 to-transparent">
+      <section className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-indigo-900 via-neutral-950 to-transparent">
         <Hero />
       </section>
       <Services />
