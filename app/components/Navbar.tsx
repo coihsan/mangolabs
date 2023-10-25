@@ -7,14 +7,14 @@ export default function Navbar (){
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     return (
        
-      <nav className="m-auto w-full p-[1rem]">
-        <div className="sticky top-2 left-0 m-auto flex items-center justify-between w-full max-w-screen-md backdrop-blur-xl bg-gradient-to-r rounded-lg from-neutral-950 to-neutral-900 border border-neutral-800 p-4">
+      <nav className="fixed top-0 mx-auto w-full backdrop-blur-xl bg-black/10 border-b-4 border-indigo-500">
+        <div className="mx-auto flex items-center justify-between max-w-screen-xl p-4">
           <Link href="#" className="">
             Mango Labs
           </Link>
-          <div className="flex items-center transition-all">
+          <div className="hidden lg:flex items-center transition-all">
             {NAV_LINK.map((link) =>(
-                <Link className="align-baseline hover:bg-neutral-800 px-6 py-1 hover:rounded-full" href={link.href} key={link.key}>{link.label}</Link>
+                <Link className="align-baseline hover:bg-neutral-800 px-4 py-1 hover:rounded-full" href={link.href} key={link.key}>{link.label}</Link>
               ))}
           </div>
         </div>
