@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
 
-import { NAV_LINK } from "../constants/index.ts"; 
+import { NAV_LINK } from "../constants/index.tsx"; 
 import Link from "next/link";
 export default function Navbar (){
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
