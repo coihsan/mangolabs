@@ -20,13 +20,13 @@ const servicesData = [
 ]
 export default function Services(){
     return(
-        <section className="containers">
+        <section className="containers max-w-screen-xl">
             <h1 className="text-5xl">Our specialisation.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            <div>
-                {servicesData.map((servicesData)=>(
-                    <div className="flex items-center">
-                        <span>{servicesData.icon}</span>
+            <div className="grid grid-cols-3 max-[600px]:grid-cols-1">
+                {servicesData.map((servicesData) =>(
+                    <div className="flex items-center flex-col">
+                        
                         <h2>{servicesData.title}</h2>
                         <p>{servicesData.desc}</p>
                     </div>
