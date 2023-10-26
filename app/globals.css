@@ -6,6 +6,8 @@
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 0, 0, 0;
+  --vp-c-text-1: rgba(255, 255, 245, .86);
+  --border-thickness: 1px;
 }
 
 *{
@@ -22,14 +24,22 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
+.box-shadow-hover:hover {
+  filter: drop-shadow(0 0 8px rgba(19, 125, 255, 0.5));
+  transform:translateY(-5px) ;
+  transition: all 0.35s ease-in-out;
+ }
+ .btn-rules{
+  box-shadow: inset 0 1px #0000001a,inset 0 0 0 var(--border-thickness) var(--vp-c-text-1);
+  transition: all 0.35s ease-in-out;
+ }
 @layer utilities{
   .containers{
     padding: 0 1rem;
     margin: auto;
   }
-  .btn-style{
-    @apply bg-gradient-to-br backdrop-blur-xl from-transparent to-slate-900 border border-slate-800 rounded-full px-16 py-5 font-bold transition-all hover:border-slate-400
+  .btn-primary{
+    @apply bg-gradient-to-br backdrop-blur-xl from-transparent to-slate-900 border border-slate-800 rounded-full px-16 max-[600px]:px-12 py-4 font-bold transition-all ease-in-out duration-100 hover:border-slate-400 hover:backdrop-blur-none hover:bg-black
   }
   
 }
