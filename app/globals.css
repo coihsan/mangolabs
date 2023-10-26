@@ -41,5 +41,13 @@ body {
   .btn-primary{
     @apply bg-gradient-to-br backdrop-blur-xl from-transparent to-slate-900 border border-slate-800 rounded-full px-16 max-[600px]:px-12 py-4 font-bold transition-all ease-in-out duration-100 hover:border-slate-400 hover:backdrop-blur-none hover:bg-black
   }
-  
+  .flexCenter{
+    @apply flex justify-center items-center
+  }
+  .flexBetween{
+    @appky flex justify-between items-center
+  }
+  .flexColCenter{
+    @apply flex flex-col items-center justify-center
+  }
 }
