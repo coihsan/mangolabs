@@ -1,13 +1,13 @@
 'use client'
 import React from "react";
 
-import { NAV_LINK } from "../constants/index.tsx"; 
+import { NAV_LINK } from "@/app/constants/index"; 
 import Link from "next/link";
 export default function Navbar (){
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     return (
        
-      <nav className="fixed top-0 mx-auto w-full backdrop-blur-xl bg-black/10 border-b-4 border-indigo-500">
+      <nav className="fixed top-0 mx-auto w-full backdrop-blur-xl bg-black/10">
         <div className="mx-auto flex items-center justify-between max-w-screen-xl p-4">
           <Link href="#" className="">
             Mango Labs

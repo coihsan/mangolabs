@@ -23,10 +23,13 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-
 @layer utilities{
   .containers{
     padding: 0 1rem;
     margin: auto;
   }
+  .btn-style{
+    @apply bg-gradient-to-br backdrop-blur-xl from-transparent to-slate-900 border border-slate-800 rounded-full px-16 py-5 font-bold transition-all hover:border-slate-400
+  }
+  
 }
