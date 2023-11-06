@@ -1,8 +1,9 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 
+
 // components
-import Navbar from './components/Navbar'
+import Navbar from '@/app/components/nav/NavMobile'
 import Footer from './components/Footer'
 
 
