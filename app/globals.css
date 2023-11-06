@@ -1,3 +1,15 @@
+@import url(https://db.onlinewebfonts.com/c/3e474a09226e19ab5228436820318a72?family=PolySans+Bulky+Wide);
+
+@font-face {
+  font-family: "PolySans Bulky Wide";
+  src: url("https://db.onlinewebfonts.com/t/3e474a09226e19ab5228436820318a72.eot");
+  src: url("https://db.onlinewebfonts.com/t/3e474a09226e19ab5228436820318a72.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/3e474a09226e19ab5228436820318a72.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/3e474a09226e19ab5228436820318a72.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/3e474a09226e19ab5228436820318a72.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/3e474a09226e19ab5228436820318a72.svg#PolySans Bulky Wide")format("svg");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +21,9 @@
   --vp-c-text-1: rgba(255, 255, 245, .86);
   --border-thickness: 1px;
 }
-
+.title-style{
+  font-family: "PolySans Bulky Wide";
+}
 *{
   margin: 0;
   padding: 0;

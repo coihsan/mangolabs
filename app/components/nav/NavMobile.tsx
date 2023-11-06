@@ -45,15 +45,15 @@ export const NavbarResp = () =>{
       }, [isOpen]);
 
     return(
-        <div className='absolute top-0 mx-auto w-full max-[600px]:fixed max-[600px]:bg-black/30 max-[600px]:backdrop-blur-xl z-50'>
-          <div className="mx-auto flex items-center justify-between max-[600px]:w-full  max-w-screen-xl px-4 py-12 max-[600px]:py-4">
-          <Link href="#" className="">
+        <div className='absolute top-5 max-[600px]:top-2 mx-auto w-full max-[600px]:fixed max-[600px]:bg-black/30 max-[600px]:backdrop-blur-xl z-50 max-[600px]:px-4'>
+          <div className="mx-auto flex items-center justify-between max-[600px]:w-full  max-w-screen-xl px-4 max-[600px]:py-4 rounded-md border border-zinc-50/40 bg-zinc-500/10">
+          <Link href="#" className="title-style text-[1.2rem]">
             Mango Labs
           </Link>
-          <div className=" flex-nowrap max-[600px]:w-full lg:flex items-center transition-all h-full">
-            <div className="hidden lg:flex p-3">
+          <div className="hidden flex-nowrap max-[600px]:w-full lg:flex items-center transition-all h-full">
+            <div className=" lg:flex p-3">
               {NAV_LINK.map((link) =>(
-                  <Link className="align-baseline hover:bg-indigo-950 hover:text-indigo-400 hover:font-bold transition-all duration-300 ease-in-out px-4 py-2 hover:rounded-full" href={link.href} key={link.key}>{link.label}</Link>
+                  <Link className="align-baseline font-medium hover:bg-indigo-950 hover:text-indigo-50 hover:font-bold transition-all duration-300 ease-in-out px-4 py-2 hover:rounded-full" href={link.href} key={link.key}>{link.label}</Link>
                 ))}
             </div>
           </div>
