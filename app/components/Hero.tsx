@@ -24,7 +24,7 @@ export default function Hero(){
                 variants={items}
                 initial="hidden"
                 animate="show"
-                transition={{ delay: 1 }}
+                transition={{ delay: 0.6 }}
                 className="m-auto text-center lg:text-[1.2rem] max-w-screen-md mt-[1rem] tex-neutral-300">We're a full-service digital marketing and web development agency that specializes in building brands and creating experiences</motion.p>
                 <div className='flex items-center gap-3 pt-[2rem]'>
                     <Link href="#" className="btn-primary btn-rules box-shadow-hover">Get Started</Link>

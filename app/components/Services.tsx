@@ -17,9 +17,9 @@ export default function Services(){
                                 <div className="fill-neutral-50 text-[3rem]">{servicesData.icon}</div>
                                 <h2 className="text-[2rem] font-bold py-[1rem] leading-none title-style tracking-wide">{servicesData.title}</h2>
                                 <p>{servicesData.desc}</p>
-                                <Link className="flex items-center gap-2 px-5 py-3 rounded-full font-medium border border-zinc-300 bg-purple-900/30 mt-[2rem] w-max" href={servicesData.url}>
+                                <Link className="flex items-center gap-2 px-5 py-3 rounded-full font-medium border border-zinc-300/30 bg-gradient-to-r from-indigo-600 to-sky-600 mt-[2rem] w-max" href={servicesData.url}>
                                     <Image src={'/star1.svg'} width={20} height={20} alt="star" className="fill-white" />
-                                    Get Started - It's Free
+                                    Readmore to detail 
                                 </Link>
                             </div>
                             <Image className="" src={'/imageblank.png'} width={500} height={300} alt="imageblank"/>

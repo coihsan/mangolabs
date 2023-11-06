@@ -1,8 +1,30 @@
 "use client"
 import React, { useState } from "react"
-
+import {motion} from 'framer-motion'
 import { NAV_LINK } from "@/app/constants/index"; 
 import Link from "next/link";
+
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2
+    }
+  }
+}
+  
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1
+  }
+}
+
+
 export default function Navbar (){
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     return (
@@ -12,13 +34,20 @@ export default function Navbar (){
           <Link href="#" className="">
             Mango Labs
           </Link>
-          <div className="hidden flex-nowrap max-[600px]:w-full lg:flex items-center transition-all h-full">
-            <div className="p-3">
+          <motion.div 
+          variants={container}
+          initial='hidden'
+          animate='visible'
+          className="hidden flex-nowrap max-[600px]:w-full lg:flex items-center transition-all h-full">
+            <motion.div className="p-3"
+            variants={item}
+            >
               {NAV_LINK.map((link) =>(
-                  <Link className="align-baseline hover:bg-indigo-950 hover:text-indigo-400 hover:font-bold transition-all duration-300 ease-in-out px-4 py-2 hover:rounded-full" href={link.href} key={link.key}>{link.label}</Link>
+                  <Link 
+                  className="align-baseline hover:bg-indigo-950 hover:text-indigo-400 hover:font-bold transition-all duration-300 ease-in-out px-4 py-2 hover:rounded-full" href={link.href} key={link.key}>{link.label}</Link>
                 ))}
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </nav>
     
