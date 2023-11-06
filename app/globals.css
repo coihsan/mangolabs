@@ -33,6 +33,21 @@ body {
   box-shadow: inset 0 1px #0000001a,inset 0 0 0 var(--border-thickness) var(--vp-c-text-1);
   transition: all 0.35s ease-in-out;
  }
+ .hamburger .line1, .hamburger .line2{
+  transition: all 0.35s ease-in-out;
+ }
+ .hamburger .line1{
+  transform-origin: 0% 100% 0%;
+ }
+ .hamburger .line2{
+  transform-origin:  100% 0% 0%;
+ }
+ .checkbox:checked ~ .hamburger >.line1{
+  transform: rotate(45deg);
+ }
+ .checkbox:checked ~ .hamburger >.line2{
+  transform: rotate(-45deg);
+ }
 @layer utilities{
   .containers{
     padding: 0 1rem;
