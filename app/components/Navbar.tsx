@@ -31,7 +31,7 @@ export default function Navbar (){
        
       <nav className="absolute top-0 mx-auto w-full max-[600px]:fixed max-[600px]:bg-black/10 max-[600px]:backdro-blur-xl ">
         <div className="mx-auto flex items-center justify-between max-[600px]:w-full  max-w-screen-xl px-4 py-12 max-[600px]:py-4">
-          <Link href="#" className="">
+          <Link href="#">
             Mango Labs
           </Link>
           <motion.div 
