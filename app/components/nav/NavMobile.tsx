@@ -45,9 +45,9 @@ export const NavbarResp = () =>{
       }, [isOpen]);
 
     return(
-        <div className='absolute top-5 max-[600px]:top-2 mx-auto w-full max-[600px]:fixed  z-50 max-[600px]:px-4'>
-          <div className="mx-auto flex items-center justify-between max-[600px]:w-full  max-w-screen-xl px-4 max-[600px]:py-4 rounded-md border border-zinc-50/40 max-[600px]:bg-black/30 max-[600px]:backdrop-blur-xl">
-          <Link href="#" className="title-style text-[1.2rem]">
+        <div className='absolute top-0 mx-auto w-full max-[600px]:fixed  z-50 max-[600px]:px-4'>
+          <div className="mx-auto flex items-center justify-between max-[600px]:w-full  max-w-screen-xl px-4 max-[600px]:py-4 0 max-[600px]:bg-black/30 max-[600px]:backdrop-blur-xl">
+          <Link href="#" className="title-style text-[1.2rem] max-[470px]:text-[1rem]">
             Mango Labs
           </Link>
           <div className="hidden flex-nowrap max-[600px]:w-full lg:flex items-center transition-all h-full">
