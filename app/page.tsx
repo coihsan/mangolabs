@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import Services from './components/Services'
 
 import { MotionConfig, motion } from "framer-motion"
+import MeetTeam from './components/MeetTeam'
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
       </section>
       <Services />
+      <MeetTeam />
     </main>
   )
 }
