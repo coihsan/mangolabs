@@ -68,7 +68,7 @@ body {
     margin: auto;
   }
   .btn-primary{
-    @apply bg-gradient-to-br backdrop-blur-xl from-transparent to-slate-900 border border-indigo-900 rounded-full px-16 max-[600px]:px-12 py-4 font-bold transition-all ease-in-out duration-100 hover:border-slate-400 hover:backdrop-blur-none hover:bg-black
+    @apply backdrop-blur-xl border rounded-full px-16 max-[600px]:px-12 py-4 font-bold transition-all ease-in-out duration-100 
   }
   .flexCenter{
     @apply flex justify-center items-center

@@ -8,7 +8,7 @@ import { MotionConfig, motion } from "framer-motion"
 export default function Home() {
   return (
     <main className="">
-      <section className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-indigo-900 via-neutral-950 to-transparent">
+      <section className="bg-[url('/butterfly.webp')] bg-fixed bg-center bg-cover max-[600px]:bg-rigth bg-origin-padding">
         <Hero />
       </section>
       <Services />
