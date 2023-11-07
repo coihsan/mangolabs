@@ -20,6 +20,11 @@
   --background-end-rgb: 0, 0, 0;
   --vp-c-text-1: rgba(255, 255, 245, .86);
   --border-thickness: 1px;
+  --violet-a1: #4422ff0f;
+  --mint-2: #0f1b1b;
+  --pink-3: #37172f;
+  --indigo-2: #141726;
+  --cyan-3: #082c36;
 }
 .title-style{
   font-family: "PolySans Bulky Wide";
@@ -62,6 +67,9 @@ body {
  .checkbox:checked ~ .hamburger >.line2{
   transform: rotate(-45deg);
  }
+ .element{
+  background: radial-gradient(ellipse at 100% 100%, hsl(254 100% 6% / 0.07), var(--violet-a1), transparent), linear-gradient(to bottom right, var(--mint-2), var(--indigo-2), var(--pink-3), var(--cyan-3));
+}
 @layer utilities{
   .containers{
     padding: 0 1rem;
