@@ -28,3 +28,30 @@ export const servicesData = [
     },
 
 ]
+
+export const meetteam = [
+    {
+        name: "Alexander",
+        position: "Web Developer",
+        contact: "0812 3456 7890",
+        images: '/team1.jpg'
+    },
+    {
+        name: "Matthew",
+        position: "Design UI/UX",
+        contact: "0812 3456 7890",
+        images: '/team2.jpg'
+    },
+    {
+        name: "Michael",
+        position: "SEM Specialist",
+        contact: "0812 3456 7890",
+        images: '/team3.jpg'
+    },
+    {
+        name: "Amelia",
+        position: "SEO Specialist",
+        contact: "0812 3456 7890",
+        images: '/team4.jpg'
+    },
+]
