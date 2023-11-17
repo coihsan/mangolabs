@@ -3,6 +3,7 @@
 import Button from '@/app/somecomponents/Button'
 import { motion } from "framer-motion"
 import Link from 'next/link'
+import Image from 'next/image'
 
 const items = {
     hidden: { opacity: 0 },
@@ -16,7 +17,7 @@ export default function Hero(){
         <div className="containers max-w-screen-xl h-[100vh] w-full flexCenter">
             <div className="flexColCenter">
                 <div className='px-4 py-1 mb-[1rem] rounded-full bg-indigo-500/20'>
-                    <span className='max-[470px]:text-[14px]'>Digital Agency from West Jakarta 🇮🇩</span>
+                    <span className='max-[470px]:text-[14px]'>Digital Agency from Kota Tangerang 🇮🇩</span>
                 </div>
                 <motion.h1 
                 variants={items}
@@ -30,8 +31,8 @@ export default function Hero(){
                 transition={{ delay: 0.6 }}
                 className="m-auto text-center lg:text-[1.2rem] max-w-screen-md mt-[1rem] tex-neutral-300 max-[470px]:text-[14px]">We're a full-service digital marketing and web development agency that specializes in building brands and creating experiences</motion.p>
                 <div className='grid grid-cols-2 justify-center items-center gap-3 pt-[2rem] max-[600px]:grid-cols-1 max-[600px]:w-full'>
-                    <Link href="#" className="text-center btn-primary btn-rules box-shadow-hover bg-gradient-to-br from-blue-500 to-sky-700">Our Projects</Link>
-                    <Link href="#" className="text-center btn-primary btn-rules box-shadow-hover bg-gradient-to-br from-slate-500 to-slate-700">Meet our team</Link>
+                    <Link  href="#" className="text-center gap-2 btn-primary btn-rules box-shadow-hover bg-zinc-50/20">Our Projects</Link>
+                    <Link  href="#" className="text-center btn-primary btn-rules box-shadow-hover">Meet our team</Link>
                 </div>
                 
             </div>

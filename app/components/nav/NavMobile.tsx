@@ -51,9 +51,9 @@ export const NavbarResp = () =>{
             Mango Labs
           </Link>
           <div className="hidden flex-nowrap max-[600px]:w-full lg:flex items-center transition-all h-full">
-            <div className=" lg:flex p-3">
+            <div className=" lg:flex lg:gap-2 p-3">
               {NAV_LINK.map((link) =>(
-                  <Link className="align-baseline font-medium hover:bg-indigo-950 hover:text-indigo-50 hover:font-bold transition-all duration-300 ease-in-out px-4 py-2 hover:rounded-full" href={link.href} key={link.key}>{link.label}</Link>
+                  <Link className="align-baseline font-medium hover:text-sky-500 transition-all duration-100 ease-in-out px-4 py-2 " href={link.href} key={link.key}>{link.label}</Link>
                 ))}
             </div>
           </div>
