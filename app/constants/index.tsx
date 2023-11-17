@@ -41,24 +41,28 @@ export const servicesData = [
 
 export const meetteam = [
     {
+        id: 0,
         name: "Alexander",
         position: "Web Developer",
         contact: "0812 3456 7890",
         images: '/team1.jpg'
     },
     {
+        id: 1,
         name: "Matthew",
         position: "Design UI/UX",
         contact: "0812 3456 7890",
         images: '/team2.jpg'
     },
     {
+        id: 2,
         name: "Michael",
         position: "SEM Specialist",
         contact: "0812 3456 7890",
         images: '/team3.jpg'
     },
     {
+        id: 3,
         name: "Amelia",
         position: "SEO Specialist",
         contact: "0812 3456 7890",

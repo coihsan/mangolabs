@@ -4,12 +4,12 @@ import Link from 'next/link'
 import { inView } from "framer-motion"
 export default function Services(){
     return(
-        <section className="bgGrid ">
+        <section className="bgGrid w-full h-full">
             <div className="containers max-w-screen-xl ">
             <div className="py-[10rem] max-[600px]:py-[5rem] w-[100%]">
                 <div className="flexColCenter gap-2 mb-[7rem]">
-                    <h1 className="text-5xl max-[600px]:text-3xl font-bold title-style">Our Specialisation.</h1>
-                    <p className="max-[600px]:text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h1 className="text-7xl max-[600px]:text-3xl font-bold title-style">Our Specialisation.</h1>
+                    <p className="max-[600px]:text-center text-zinc-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div className="grid grid-cols-2 w-[100%] max-[600px]:grid-cols-1 gap-5 ">
                     {servicesData.map((servicesData) =>(
