@@ -77,6 +77,9 @@ body {
   background-image: url(/grid.svg);
 }
 @layer utilities{
+  .textTitle{
+    @apply text-[3.5rem] text-center max-[600px]:text-3xl
+  }
   .containers{
     padding: 0 1rem;
     margin: auto;

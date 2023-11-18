@@ -7,7 +7,7 @@ export default function MeetTeam(){
         <section className="containers max-w-screen-xl">
             <div className="py-[10rem] max-[600px]:py-[5rem] w-[100%]">
                 <div className="flexColCenter gap-2 mb-[7rem]">
-                    <h1 className="text-7xl max-[600px]:text-3xl font-bold title-style">Meet Our Team.</h1>
+                    <h1 className="textTitle font-bold title-style">Meet Our Team.</h1>
                     <p className="max-[600px]:text-center text-zinc-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div className="">
@@ -15,8 +15,8 @@ export default function MeetTeam(){
                         {meetteam.map((meetteam) =>(
                             <div key={meetteam.id} className='group relative overflow-hidden w-[300px] h-[400px] rounded-md flexColCenter transition-all ease-linear group-hover:grayscale'>
                                 <Image className='w-[300px] h-[400px] hover:filter-none object-cover' src={meetteam.images} width={300} height={300} alt='image' />
-                                <div className="hidden absolute bottom-0 left-0 z-10 group-hover:block bg-rose-50 w-full h-[30%] rounded-md transition-all ease-linear">
-                                    <h2>{meetteam.name}</h2>
+                                <div className="translate-y-[150%] absolute bottom-0 opacity-0 left-0 z-10 group-hover:opacity-1 group-hover:translate-y-[0%] bg-zinc-900/80 w-full h-[20%] flexColCenter transition-all ease-linear">
+                                    <h2 className="text-2xl">{meetteam.name}</h2>
                                     <p>{meetteam.position}</p>
                                 </div>
                             </div>
