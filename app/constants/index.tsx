@@ -45,27 +45,27 @@ export const meetteam = [
         name: "Alexander",
         position: "Web Developer",
         contact: "0812 3456 7890",
-        images: '/team1.jpg'
+        images: '/1700304501358.webp'
     },
     {
         id: 1,
         name: "Matthew",
         position: "Design UI/UX",
         contact: "0812 3456 7890",
-        images: '/team2.jpg'
+        images: '/1700304501329.webp'
     },
     {
         id: 2,
         name: "Michael",
         position: "SEM Specialist",
         contact: "0812 3456 7890",
-        images: '/team3.jpg'
+        images: '/1700304501348.webp'
     },
     {
         id: 3,
         name: "Amelia",
         position: "SEO Specialist",
         contact: "0812 3456 7890",
-        images: '/team4.jpg'
+        images: '/1700304501339.webp'
     },
 ]
