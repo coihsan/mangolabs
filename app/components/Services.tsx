@@ -8,7 +8,7 @@ export default function Services(){
             <div className="containers max-w-screen-xl ">
             <div className="py-[10rem] max-[600px]:py-[5rem] w-[100%]">
                 <div className="flexColCenter gap-2 mb-[4rem]">
-                    <h1 className=" font-bold textTitle title-style">Our Specialisation.</h1>
+                    <h1 className="font-bold textTitle title-style">Our Specialisation.</h1>
                     <p className="max-[600px]:text-center text-zinc-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div className="grid grid-cols-2 w-[100%] max-[600px]:grid-cols-1 gap-5 ">

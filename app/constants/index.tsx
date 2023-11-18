@@ -1,10 +1,10 @@
 export const NAV_LINK = [
     {href: '/', key: "home", label: "Home"},
-    {href: '/', key: "services", label: "Services"},
-    {href: '/', key: "projects", label: "Projects"},
-    {href: '/', key: "article", label: "Article"},
-    {href: '/', key: "aboutus", label: "About Us"},
-    {href: '/', key: "contact", label: "Contact"},
+    {href: '/pages', key: "/services", label: "Services"},
+    {href: '/pages', key: "/projects", label: "Projects"},
+    {href: '/pages', key: "blog", label: "Article"},
+    {href: '/pages', key: "aboutus", label: "About Us"},
+    {href: '/pages', key: "contact", label: "Contact"},
 ];
 
 export const servicesData = [
