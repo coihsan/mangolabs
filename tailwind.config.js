@@ -14,6 +14,15 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
           'hero-pattern': "url('/app/assets/bg-image.webp')",
       },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      }                    
     },
   },
   plugins: [],
