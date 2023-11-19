@@ -72,10 +72,12 @@ export const meetteam = [
 
 export const infinitedtext = [
     "Development",
+    "Branding",
     "Marketing",
     "Campaign",
     "Web App",
+    "Web Design",
     "SEO",
-    "Influences",
+    "Influencer",
     "Strategy"
 ]
