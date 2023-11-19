@@ -1,6 +1,6 @@
 export default function AboutUs(){
     return(
-        <section className="max-w-screen-xl mx-auto py-[7rem] px-[1rem] flex items-center ">
+        <section className="max-w-screen-xl mx-auto py-[7rem] px-[1rem] ">
             <h1 className="text-8xl title-style flex-1">We Make Good Results</h1>
             <div className="flex-1 flex flex-col ">
                 <h2 className="text-[2rem] leading-none">Mango Labs is a multidisciplinary creative studio at the intersection of art, design and technology.</h2>
