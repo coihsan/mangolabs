@@ -13,14 +13,13 @@ export default function Services(){
                 </div>
                 <div className="grid grid-cols-2 w-[100%] max-[600px]:grid-cols-1 gap-5 ">
                     {servicesData.map((servicesData) =>(
-                        <div key={servicesData.id} className="flex flex-col bg-gradient-to-tl  from-zinc-900 to-transparent border border-zinc-50/20 backdrop-blur-sm p-8 rounded-xl">
-                            <h2 className="text-[2rem] font-bold py-[1rem] leading-none title-style tracking-wide">{servicesData.title}</h2>
-                            <p className="text-zinc-300">{servicesData.desc}</p>
-                            <Link className="flex items-center gap-2 px-5 py-2 max-[600px]:px-4 max-[600px]:py-2 rounded-full font-medium border hover:border-zinc-300/30 hover:bg-gradient-to-r transition-all ease-in-out duration-500 hover:from-indigo-600 hover:to-sky-600 bg-zinc-700/30 mt-[2rem] w-max" href={servicesData.url}>
-                                <Image src={'/star1.svg'} width={20} height={20} alt="star" className="fill-white" />
-                                    Readmore
-                            </Link>
-                        </div>
+                        <Link href={servicesData.url} key={servicesData.id} className="relative group flex flex-col bg-gradient-to-tl  from-zinc-900 to-transparent border border-zinc-50/20 hover:from-sky-950 hover:border-sky-500 backdrop-blur-sm p-8 rounded-xl transition-all ease-linear duration-150">
+                            <h2 className="text-[2rem] font-bold py-[1rem] leading-none title-style tracking-wide group-hover:bg-clip-text group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-sky-500 group-hover:via-pink-500 group-hover:to-indigo-500 transition-all ease-linear duration-150">{servicesData.title}</h2>
+                            <p className="text-zinc-400">{servicesData.desc}</p>
+                            <div className="absolute right-5 top-5" >
+                                <Image src={'/arrow.svg'} width={20} height={20} alt="star" className="group-hover:rotate-[45deg] transition-all ease-linear duration-150" />
+                            </div>
+                        </Link>
                     ))}
                 </div>
             </div>

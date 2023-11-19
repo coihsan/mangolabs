@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Hero from './components/Hero'
 import Services from './components/Services'
+import Banner1 from './components/banner-1'
 
 import { MotionConfig, motion } from "framer-motion"
 import MeetTeam from './components/MeetTeam'
@@ -14,6 +15,7 @@ export default function Home() {
       </section>
       <Services />
       <MeetTeam />
+      <Banner1 />
     </main>
   )
 }
