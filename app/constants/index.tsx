@@ -69,3 +69,13 @@ export const meetteam = [
         images: '/1700304501339.webp'
     },
 ]
+
+export const infinitedtext = [
+    "Development",
+    "Marketing",
+    "Campaign",
+    "Web App",
+    "SEO",
+    "Influences",
+    "Strategy"
+]

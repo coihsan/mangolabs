@@ -1,4 +1,25 @@
+'use client'
+import React, { useState, useEffect, useRef } from 'react';
+import { infinitedtext } from "@/app/constants/index";
+import {
+    motion,
+    useScroll,
+    useSpring,
+    useTransform,
+    useMotionValue,
+    useVelocity,
+    useAnimationFrame
+  } from "framer-motion";
+
+  interface ParallaxProps {
+    children: string;
+    baseVelocity: number;
+  }
+
+  
+
 export default function Banner1(){
+
     return(
         <section className="w-full  py-[5rem] max-[600px]:px-[1rem]">
             <div className="rounded-xl bg-zinc-900 max-w-screen-xl p-[9rem] max-[600px]:px-[2rem] mx-auto">
