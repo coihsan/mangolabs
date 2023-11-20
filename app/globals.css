@@ -78,6 +78,23 @@ body {
   background-size: 11%;
   background-image: url(/grid.svg);
 }
+.overlay::before,
+.overlay::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 30%;
+  height: 100%;
+}
+.overlay::before{
+  left: 0px;
+  background-image: linear-gradient(to right, #18181b, #18181b00);
+  z-index: 10;
+}
+.overlay::after{
+  right: 0;
+  background-image: linear-gradient(to left, #18181b, #18181b00);
+}
 @layer utilities{
   .textTitle{
     @apply text-[3.5rem] text-center max-[600px]:text-3xl leading-none
@@ -93,7 +110,7 @@ body {
     @apply flex justify-center items-center
   }
   .flexBetween{
-    @appky flex justify-between items-center
+    @apply flex justify-between items-center
   }
   .flexColCenter{
     @apply flex flex-col items-center justify-center
