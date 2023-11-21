@@ -95,16 +95,16 @@ body {
   right: 0;
   background-image: linear-gradient(to left, #18181b, #18181b00);
 }
+.containers{
+  padding: 0 1rem;
+  margin: auto;
+}
 @layer utilities{
   .textTitle{
     @apply text-[3.5rem] text-center max-[600px]:text-3xl leading-none
   }
-  .containers{
-    padding: 0 1rem;
-    margin: auto;
-  }
   .btn-primary{
-    @apply backdrop-blur-xl border rounded-lg px-8 py-3 max-[600px]:px-4 max-[600px]:py-2 max-[397px]:px-2 font-bold transition-all ease-in-out duration-100 
+    @apply backdrop-blur-xl border rounded-full px-8 py-3 max-[600px]:px-4 max-[600px]:py-2 max-[397px]:px-2 font-bold transition-all ease-in-out duration-100 
   }
   .flexCenter{
     @apply flex justify-center items-center
