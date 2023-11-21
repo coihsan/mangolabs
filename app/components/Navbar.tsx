@@ -27,6 +27,9 @@ const item = {
 
 export default function Navbar (){
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    // const handleOpen = () => {
+    //   if (setIsMenuOpen === )
+    // }
     return (
        
       <nav className="absolute top-0 mx-auto w-full max-[600px]:fixed max-[600px]:bg-black/10 max-[600px]:backdro-blur-xl ">
