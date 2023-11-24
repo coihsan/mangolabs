@@ -15,7 +15,7 @@ export default function MeetTeam(){
                         {meetteam.map((meetteam) =>(
                             <div key={meetteam.id} className='group group-hover/team:filter-none relative overflow-hidden w-[300px] h-[400px] rounded-md flexColCenter transition-all ease-linear'>
                                     <Image className='max-[600px]:w-full w-[300px] h-[400px] hover:filter-none object-cover object-top group-hover:scale-[1.09] transition-all ease-linear duration-700 grayscale' src={meetteam.images} width={300} height={300} alt='image' />
-                                <div className="translate-y-[150%] group-hover:filter-none absolute bottom-0 opacity-0 left-0 z-10 group-hover:opacity-100 group-hover:translate-y-[0%] bg-zinc-900/80 w-full h-[30%] flexColCenter transition-all ease-linear duration-500">
+                                <div className="translate-y-[150%] group-hover:filter-none absolute bottom-0 opacity-0 left-0 z-10 group-hover:opacity-100 group-hover:translate-y-[0%] bg-gradient-to-t from-zinc-950 via-zinc-950/50 to-transparent w-full h-[50%] flexColCenter transition-all ease-in-out duration-300">
                                     <h2 className="text-[2rem] leading-none delay-150 ">{meetteam.name}</h2>
                                     <p className="delay-300">{meetteam.position}</p>
                                     <a className="px-4 py-1 mt-[10px] rounded-full bg-white text-black" href={meetteam.contact}>Call me</a>
