@@ -28,12 +28,12 @@ export default function Banner1(){
                 <div className="w-full flex gap-20 h-full mt-[1.5rem] relative before:block after:block overflow-hidden overlay">
                     <ul className="animate-infinite-scroll w-max flexCenter gap-9 list-disc">
                         {infinitedtext.map((index) =>(
-                            <li className="w-max text-3xl max-[600px]:text-[1rem] leading-none">{index}</li>
+                            <li key={index.id} className="w-max text-3xl max-[600px]:text-[1rem] leading-none">{index.title}</li>
                         ))}
                     </ul>
                     <ul className="animate-infinite-scroll w-max flexCenter gap-9 list-disc">
                         {infinitedtext.map((index) =>(
-                            <li className="w-max text-3xl max-[600px]:text-[1rem] leading-none">{index}</li>
+                            <li key={index.id} className="w-max text-3xl max-[600px]:text-[1rem] leading-none">{index.title}</li>
                         ))}
                     </ul>
                 </div>

@@ -70,13 +70,40 @@ export const meetteam = [
 ]
 
 export const infinitedtext = [
-    "Development",
-    "Branding",
-    "Marketing",
-    "Campaign",
-    "Web App",
-    "Web Design",
-    "SEO",
-    "Influencer",
-    "Strategy"
+    {
+        id: 0,
+        title: "Development",
+    },
+    {
+        id: 1,
+        title: "Branding",
+    },
+    {
+        id: 2,
+        title: "Marketing",
+    },
+    {
+        id: 3,
+        title: "Campaign",
+    },
+    {
+        id: 4,
+        title: "Web App",
+    },
+    {
+        id: 5,
+        title: "Web Design",
+    },
+    {
+        id: 6,
+        title: "SEO",
+    },
+    {
+        id: 7,
+        title: "Influencer",
+    },
+    {
+        id: 8,
+        title: "Strategy"
+    }, 
 ]
