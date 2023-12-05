@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { NAV_LINK } from "@/app/constants/index";
 import Link from "next/link";
 const HamburgerMenu = () => {
@@ -72,8 +73,18 @@ export const NavbarResp = () => {
           </div>
         </div>
         <HamburgerMenu />
-        <Link className="px-4 py-1 bg-slate-600 rounded-full" href={"#"}>
-          (021) 55654432{" "}
+        <Link
+          className="px-4 py-1 bg-zinc-100 flex items-center gap-2  text-zinc-950 rounded-full"
+          href={"#"}
+        >
+          <span>(021) 55654432</span>
+          <Image
+            className="fill-black rotate-[45deg]"
+            src={"/arrow.svg"}
+            width={20}
+            height={20}
+            alt="arrow"
+          />
         </Link>
       </div>
     </nav>

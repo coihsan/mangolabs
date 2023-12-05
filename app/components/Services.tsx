@@ -20,7 +20,7 @@ export default function Services() {
               <Link
                 href={servicesData.url}
                 key={servicesData.id}
-                className="relative group flex flex-col bg-gradient-to-tl from-zinc-900 to-transparent border border-zinc-50/20 hover:from-lime-950 hover:border-lime-500 backdrop-blur-sm p-8 drop-shadow-2xl shadow-lime-600 rounded-xl transition-all ease-linear duration-150"
+                className="relative group flex flex-col bg-gradient-to-tl from-zinc-900 to-transparent border border-zinc-50/20 hover:from-lime-950 hover:border-lime-500 backdrop-blur-sm p-8 drop-shadow-lg shadow-lime-600 rounded-xl transition-all ease-linear duration-150"
               >
                 <h2 className="text-[2rem] font-bold pb-[1rem] leading-none title-style tracking-wide group-hover:bg-clip-text group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-rose-500 group-hover:via-rose-500 group-hover:to-indigo-500 transition-all ease-linear duration-150">
                   {servicesData.title}

@@ -3,11 +3,17 @@
 @font-face {
   font-family: "PolySans Bulky Wide";
   src: url("https://db.onlinewebfonts.com/t/3e474a09226e19ab5228436820318a72.eot");
-  src: url("https://db.onlinewebfonts.com/t/3e474a09226e19ab5228436820318a72.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/3e474a09226e19ab5228436820318a72.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/3e474a09226e19ab5228436820318a72.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/3e474a09226e19ab5228436820318a72.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/3e474a09226e19ab5228436820318a72.svg#PolySans Bulky Wide")format("svg");
+  src:
+    url("https://db.onlinewebfonts.com/t/3e474a09226e19ab5228436820318a72.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3e474a09226e19ab5228436820318a72.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3e474a09226e19ab5228436820318a72.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/3e474a09226e19ab5228436820318a72.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3e474a09226e19ab5228436820318a72.svg#PolySans Bulky Wide")
+      format("svg");
 }
 
 @tailwind base;
@@ -18,7 +24,7 @@
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 0, 0, 0;
-  --vp-c-text-1: rgba(255, 255, 245, .86);
+  --vp-c-text-1: rgba(255, 255, 245, 0.86);
   --border-thickness: 1px;
   --violet-a1: #4422ff0f;
   --mint-2: #0f1b1b;
@@ -26,10 +32,10 @@
   --indigo-2: #141726;
   --cyan-3: #082c36;
 }
-.title-style{
+.title-style {
   font-family: "PolySans Bulky Wide";
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -47,76 +53,91 @@ body {
 }
 .box-shadow-hover:hover {
   filter: drop-shadow(0 5 8px rgba(19, 125, 255, 0.5));
-  transform:translateY(-5px) ;
+  transform: translateY(-5px);
   transition: all 0.35s ease-in-out;
- }
- .btn-rules{
-  box-shadow: inset 0 1px #0000001a,inset 0 0 0 var(--border-thickness) var(--vp-c-text-1);
-  transition: all 0.35s ease-in-out;
- }
- .hamburger .line1, .hamburger .line2{
-  transition: all 0.35s ease-in-out;
- }
- .hamburger .line1{
-  transform-origin: 0% 100% 0%;
- }
- .hamburger .line2{
-  transform-origin:  100% 0% 0%;
- }
- .checkbox:checked ~ .hamburger >.line1{
-  transform: rotate(45deg);
- }
- .checkbox:checked ~ .hamburger >.line2{
-  transform: rotate(-45deg);
- }
- .element{
-  background: radial-gradient(ellipse at 100% 100%, hsl(254 100% 6% / 0.07), var(--violet-a1), transparent), linear-gradient(to bottom right, var(--mint-2), var(--indigo-2), var(--pink-3), var(--cyan-3));
 }
-.bgGrid{
+.btn-rules {
+  box-shadow:
+    inset 0 1px #0000001a,
+    inset 0 0 0 var(--border-thickness) var(--vp-c-text-1);
+  transition: all 0.35s ease-in-out;
+}
+.hamburger .line1,
+.hamburger .line2 {
+  transition: all 0.35s ease-in-out;
+}
+.hamburger .line1 {
+  transform-origin: 0% 100% 0%;
+}
+.hamburger .line2 {
+  transform-origin: 100% 0% 0%;
+}
+.checkbox:checked ~ .hamburger > .line1 {
+  transform: rotate(45deg);
+}
+.checkbox:checked ~ .hamburger > .line2 {
+  transform: rotate(-45deg);
+}
+.element {
+  background: radial-gradient(
+      ellipse at 100% 100%,
+      hsl(254 100% 6% / 0.07),
+      var(--violet-a1),
+      transparent
+    ),
+    linear-gradient(
+      to bottom right,
+      var(--mint-2),
+      var(--indigo-2),
+      var(--pink-3),
+      var(--cyan-3)
+    );
+}
+.bgGrid {
   background-repeat: repeat;
   background-clip: border-box;
   background-size: 11%;
   background-image: url(/grid.svg);
 }
 .overlay::before,
-.overlay::after{
+.overlay::after {
   content: "";
   position: absolute;
   top: 0;
   width: 30%;
   height: 100%;
 }
-.overlay::before{
+.overlay::before {
   left: 0px;
   background-image: linear-gradient(to right, #18181b, #18181b00);
   z-index: 10;
 }
-.overlay::after{
+.overlay::after {
   right: 0;
   background-image: linear-gradient(to left, #18181b, #18181b00);
 }
-.containers{
+.containers {
   padding: 0 1rem;
   margin: auto;
 }
-@layer utilities{
-  .textTitle{
-    @apply text-[3.5rem] text-center max-[600px]:text-3xl leading-none
+@layer utilities {
+  .textTitle {
+    @apply text-[3.5rem] text-center max-[600px]:text-3xl leading-none;
   }
-  .btn-primary{
-    @apply backdrop-blur-xl border rounded-full px-8 py-3 max-[600px]:px-4 max-[600px]:py-2 max-[397px]:px-2 font-bold transition-all ease-in-out duration-100 
+  .btn-primary {
+    @apply backdrop-blur-xl border rounded-full px-8 py-3 max-[600px]:px-4 max-[600px]:py-2 max-[397px]:px-2 font-bold transition-all ease-in-out duration-100;
   }
-  .flexCenter{
-    @apply flex justify-center items-center
+  .flexCenter {
+    @apply flex justify-center items-center;
   }
-  .flexBetween{
-    @apply flex justify-between items-center
+  .flexBetween {
+    @apply flex justify-between items-center;
   }
-  .flexColCenter{
-    @apply flex flex-col items-center justify-center
+  .flexColCenter {
+    @apply flex flex-col items-center justify-center;
   }
-  .flexColCenterReverse{
-    @apply flex flex-col-reverse items-center justify-center
+  .flexColCenterReverse {
+    @apply flex flex-col-reverse items-center justify-center;
   }
 }
 .carousel .controls {
