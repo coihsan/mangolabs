@@ -139,6 +139,9 @@ body {
   .flexColCenterReverse {
     @apply flex flex-col-reverse items-center justify-center;
   }
+  .transitionEffect {
+    @apply transition-all duration-300 ease-in-out;
+  }
 }
 .carousel .controls {
   margin-bottom: 8px;

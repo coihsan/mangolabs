@@ -20,26 +20,28 @@ export default function Services() {
               <Link
                 href={servicesData.url}
                 key={servicesData.id}
-                className="relative group flex flex-col bg-gradient-to-tl from-zinc-900 to-transparent border border-zinc-50/20 hover:from-lime-950 hover:border-lime-500 backdrop-blur-sm p-8 drop-shadow-lg shadow-lime-600 rounded-xl transition-all ease-linear duration-150"
+                className="relative overflow-hidden group flex flex-col bg-gradient-to-tl from-zinc-900 to-transparent border border-sky-500/40 hover:from-sky-950 hover:border-sky-500 backdrop-blur-sm drop-shadow-lg shadow-lime-600 rounded-xl transition-all ease-linear duration-150"
               >
-                <h2 className="text-[2rem] font-bold pb-[1rem] leading-none title-style tracking-wide group-hover:bg-clip-text group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-rose-500 group-hover:via-rose-500 group-hover:to-indigo-500 transition-all ease-linear duration-150">
-                  {servicesData.title}
-                </h2>
-                <h4 className="text-normal text-2xl text-zinc-400">
-                  {servicesData.subtitle}
-                </h4>
-                <h5 className="px-4 my-3 py-1 rounded-full bg-zinc-100/10 w-max text-yellow-500 font-semibold">
-                  {servicesData.pricing}
-                </h5>
-                <p className="text-zinc-400">{servicesData.desc}</p>
-                <div className="absolute right-5 bottom-5">
-                  <Image
-                    src={"/arrow.svg"}
-                    width={20}
-                    height={20}
-                    alt="star"
-                    className="group-hover:rotate-[45deg] transition-all ease-linear duration-150"
-                  />
+                <Image
+                  className="object-cover relative"
+                  src={servicesData.imageSrc}
+                  width={500}
+                  height={300}
+                  alt="image"
+                />
+                <div className="p-8 absolute bottom-0 transition-transform duration-100 ease-in-out">
+                  <h2 className="text-[2rem] font-bold pb-[1rem] leading-none title-style tracking-wide">
+                    {servicesData.title}
+                  </h2>
+                  <h4 className="text-normal text-2xl text-zinc-400 hidden group-hover:block">
+                    {servicesData.subtitle}
+                  </h4>
+                  <h5 className="px-4 my-3 py-1 rounded-full bg-zinc-100/10 w-max text-yellow-500 font-semibold hidden group-hover:block">
+                    {servicesData.pricing}
+                  </h5>
+                  <p className="text-zinc-400 hidden group-hover:block">
+                    {servicesData.desc}
+                  </p>
                 </div>
               </Link>
             ))}
