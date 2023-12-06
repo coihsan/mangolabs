@@ -43,7 +43,7 @@ export const servicesData = [
   {
     id: 2,
     title: "Web Design",
-    pricing: "Star at Rp 1.500K",
+    pricing: "Start at Rp 1.500K",
     subtitle: "Increase your convertion rate",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum orci quis sapien aliquet, a porta mi tincidunt. Proin mi tellus, eleifend vel lorem vitae, porta vehicula ex.",
     icon: (

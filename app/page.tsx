@@ -1,13 +1,13 @@
-import Image from 'next/image'
-import Hero from './components/Hero'
-import Aboutus from './components/Aboutus'
-import Services from './components/Services'
-import Projects from './components/Projects'
-import Banner1 from './components/banner-1'
+import Image from "next/image";
+import Hero from "./components/Hero";
+import Aboutus from "./components/Aboutus";
+import Services from "./components/Services";
+import Projects from "./components/Projects";
+import Banner1 from "./components/banner-1";
+import Pricing from "./components/Pricing";
 
-import { MotionConfig, motion } from "framer-motion"
-import MeetTeam from './components/MeetTeam'
-
+import { MotionConfig, motion } from "framer-motion";
+import MeetTeam from "./components/MeetTeam";
 
 export default function Home() {
   return (
@@ -20,6 +20,7 @@ export default function Home() {
       <MeetTeam />
       <Banner1 />
       <Projects />
+      <Pricing />
     </main>
-  )
+  );
 }

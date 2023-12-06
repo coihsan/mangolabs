@@ -17,33 +17,18 @@ export default function Services() {
           </div>
           <div className="grid grid-cols-3 w-[100%] max-[600px]:grid-cols-1 gap-5 ">
             {servicesData.map((servicesData) => (
-              <Link
-                href={servicesData.url}
-                key={servicesData.id}
-                className="relative overflow-hidden group flex flex-col bg-gradient-to-tl from-zinc-900 to-transparent border border-sky-500/40 hover:from-sky-950 hover:border-sky-500 backdrop-blur-sm drop-shadow-lg shadow-lime-600 rounded-xl transition-all ease-linear duration-150"
-              >
+              <div key={servicesData.id} className="relative">
                 <Image
-                  className="object-cover relative"
+                  className="object-cover "
                   src={servicesData.imageSrc}
                   width={500}
                   height={300}
                   alt="image"
                 />
-                <div className="p-8 absolute bottom-0 transition-transform duration-100 ease-in-out">
-                  <h2 className="text-[2rem] font-bold pb-[1rem] leading-none title-style tracking-wide">
-                    {servicesData.title}
-                  </h2>
-                  <h4 className="text-normal text-2xl text-zinc-400 hidden group-hover:block">
-                    {servicesData.subtitle}
-                  </h4>
-                  <h5 className="px-4 my-3 py-1 rounded-full bg-zinc-100/10 w-max text-yellow-500 font-semibold hidden group-hover:block">
-                    {servicesData.pricing}
-                  </h5>
-                  <p className="text-zinc-400 hidden group-hover:block">
-                    {servicesData.desc}
-                  </p>
-                </div>
-              </Link>
+                <h2 className="absolute left-5 bottom-0 text-[2rem] font-bold pb-[1rem] leading-none title-style tracking-wide">
+                  {servicesData.title}
+                </h2>
+              </div>
             ))}
           </div>
         </div>
