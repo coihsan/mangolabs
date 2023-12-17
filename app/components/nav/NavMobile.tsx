@@ -49,8 +49,8 @@ export const NavbarResp = () => {
   }, [isOpen]);
 
   return (
-    <nav className="absolute top-3 mx-auto w-full max-[600px]:fixed  z-50 ">
-      <div className="mx-auto flex items-center justify-between max-[600px]:w-full  max-w-screen-xl px-4 max-[600px]:py-4 0 max-[600px]:bg-white/10 max-[600px]:backdrop-blur-xl">
+    <nav className="absolute top-3 max-[600px]:top-0 mx-auto w-full max-[600px]:fixed  z-50 ">
+      <div className="mx-auto flex items-center justify-between max-[600px]:w-full  max-w-screen-xl px-4 max-[600px]:py-4 0 max-[600px]:bg-black/10 max-[600px]:backdrop-blur-xl">
         <div className="flex items-center">
           <Link
             href="#"
@@ -74,7 +74,7 @@ export const NavbarResp = () => {
         </div>
         <HamburgerMenu />
         <Link
-          className="px-4 py-1 bg-zinc-100 flex items-center gap-2  text-zinc-950 rounded-full"
+          className="px-4 py-1 bg-zinc-100 flex items-center gap-2  text-zinc-950 rounded-full max-[600px]:hidden"
           href={"#"}
         >
           <span>(021) 55654432</span>

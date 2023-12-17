@@ -109,12 +109,12 @@ body {
 }
 .overlay::before {
   left: 0px;
-  background-image: linear-gradient(to right, #18181b, #18181b00);
+  background-image: linear-gradient(to right, #000000, #18181b00);
   z-index: 10;
 }
 .overlay::after {
   right: 0;
-  background-image: linear-gradient(to left, #18181b, #18181b00);
+  background-image: linear-gradient(to left, #000000, #18181b00);
 }
 .containers {
   padding: 0 1rem;
