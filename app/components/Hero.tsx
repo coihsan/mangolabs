@@ -25,7 +25,7 @@ export default function Hero() {
           variants={items}
           initial="hidden"
           animate="show"
-          className="text-center text-[4.5rem] max-[600px]:text-[3rem] font-bold sm:leading-none leading-[0.8] title-style"
+          className="text-center text-[4.5rem] max-[600px]:text-[2rem] font-bold sm:leading-none leading-[0.8] title-style"
         >
           We build brands, <br /> we create experiences.
         </motion.h1>

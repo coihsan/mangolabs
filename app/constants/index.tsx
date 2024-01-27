@@ -13,7 +13,7 @@ export const servicesData = [
     title: "SEO",
     subtitle: "Ranking higher",
     pricing: "Pricing based on need",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum orci quis sapien aliquet, a porta mi tincidunt. Proin mi tellus, eleifend vel lorem vitae, porta vehicula ex.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum orci quis sapien aliquet, a porta mi tincidunt.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24">
         <path d="M19 3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zm0 2 .001 4H5V5h14zM5 11h8v8H5v-8zm10 8v-8h4.001l.001 8H15z"></path>
@@ -27,7 +27,7 @@ export const servicesData = [
     title: "Lead Generation",
     pricing: "Pricing based on need",
     subtitle: "Get more potensial client",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum orci quis sapien aliquet, a porta mi tincidunt. Proin mi tellus, eleifend vel lorem vitae, porta vehicula ex.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum orci quis sapien aliquet, a porta mi tincidunt.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ export const servicesData = [
     title: "Web Design",
     pricing: "Start at Rp 1.500K",
     subtitle: "Increase your convertion rate",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum orci quis sapien aliquet, a porta mi tincidunt. Proin mi tellus, eleifend vel lorem vitae, porta vehicula ex.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum orci quis sapien aliquet, a porta mi tincidunt.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -21,7 +21,7 @@ export default function Services() {
                   <h2 className="text-[2rem] font-bold pb-[1rem] leading-none title-style tracking-wide">
                     {servicesData.title}
                   </h2>
-                  <h4 className="text-normal text-2xl text-zinc-400">
+                  <h4 className="text-normal text-xl text-zinc-400">
                     {servicesData.subtitle}
                   </h4>
                   <h5 className="px-4 my-3 py-1 rounded-full bg-zinc-100/10 w-max text-yellow-500 font-semibold">
